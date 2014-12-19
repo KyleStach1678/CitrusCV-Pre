@@ -1,0 +1,20 @@
+/*
+ * IteratePixelEffect.h
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#ifndef EFFECT_ITERATEPIXELEFFECT_H_
+#define EFFECT_ITERATEPIXELEFFECT_H_
+
+#include "ImageEffect.h"
+
+class IteratePixelEffect: public ImageEffect {
+public:
+	IteratePixelEffect();
+	virtual ~IteratePixelEffect();
+	virtual void processPixel();
+};
+
+#endif /* EFFECT_ITERATEPIXELEFFECT_H_ */

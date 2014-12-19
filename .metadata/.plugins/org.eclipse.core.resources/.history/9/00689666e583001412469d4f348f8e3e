@@ -1,0 +1,13 @@
+package org.citruscircuits.vision.effects;
+
+import org.opencv.core.Mat;
+
+public class EdgeDetectEffect extends ImageEffect {
+
+	@Override
+	public Mat process(Mat original) {
+		Mat retval = original.clone();
+		return null;
+	}
+
+}

@@ -1,0 +1,66 @@
+package org.citruscircuits.vision;
+
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+import java.awt.event.WindowStateListener;
+
+import javax.swing.JFrame;
+
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.Size;
+
+import com.atul.JavaOpenCV.Imshow;
+
+
+
+public class Boot implements WindowListener {
+	public boolean open = true;
+	public static void main(String[] args) {
+		Boot wsl = new Boot();
+		System.loadLibrary("opencv_java249");
+		Imshow im = new Imshow("test");
+		im.showImage(Mat.zeros(new Size(100, 100), CvType.CV_8UC3));
+		im.Window.addWindowListener(wsl);
+		ObjectTracker objtrack = new ObjectTracker();
+		objtrack.start();
+		while(true) {
+			objtrack.update();
+			im.showImage(objtrack.getFrame());
+		}
+	}
+	@Override
+	public void windowActivated(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowClosed(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowClosing(WindowEvent arg0) {
+		open = false;
+	}
+	@Override
+	public void windowDeactivated(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowDeiconified(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowIconified(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowOpened(WindowEvent arg0) {
+		System.out.println("OPEN");
+	}
+	
+}

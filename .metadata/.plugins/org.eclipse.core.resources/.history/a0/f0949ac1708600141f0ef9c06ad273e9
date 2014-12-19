@@ -1,0 +1,23 @@
+package org.citruscircuits.vision.effects;
+
+import java.util.Date;
+
+import org.opencv.core.Mat;
+
+public class FramesEffect extends ImageEffect {
+	long lastTime;
+	int frames;
+	
+	public FramesEffect() {
+		frames = 0;
+		lastTime = new Date().getTime();
+	}
+	
+	@Override
+	public Mat process(Mat original) {
+		
+		lastTime = new Date().getTime();
+		return null;
+	}
+
+}

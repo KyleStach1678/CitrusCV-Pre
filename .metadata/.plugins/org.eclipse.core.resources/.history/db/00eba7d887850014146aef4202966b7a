@@ -1,0 +1,61 @@
+/*
+ * ObjectTracker.cpp
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#include "ObjectTracker.h"
+#include "Effect/BrightnessContrastEffect.h"
+#include "Effect/ScanLineEffect.h"
+#include <windows.h>
+#include <iostream>
+#include <cstdio>
+#include <ctime>
+
+ObjectTracker::ObjectTracker() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ObjectTracker::~ObjectTracker() {
+	// TODO Auto-generated destructor stub
+}
+
+int main() {
+	ScanLineEffect e;
+	BrightnessContrastEffect e2(20, 0);
+	cv::VideoCapture cap(0); // open the default camera
+	if(!cap.isOpened())  // check if we succeeded
+		return -1;
+
+	cv::namedWindow("edges",1);
+	int lastTimeMs;
+	int frameRate;
+	for(;;)
+	{
+		long curTimeMs = std::clock();
+		if(rand() % 10 == 0)
+			frameRate = 1000 / (curTimeMs - lastTimeMs);
+		lastTimeMs = curTimeMs;
+		cv::Mat edges;
+		cv::Mat frame;
+		cap >> frame; // get a new frame from camera
+		cv::cvtColor(frame, edges, CV_BGR2GRAY);
+		cv::GaussianBlur(edges, edges, cv::Size(3, 3), 1.5);
+		cv::Laplacian(edges, edges, frame.depth());
+		cv::convertScaleAbs(edges, edges);
+//		Canny(edges, edges, 0, 30, 3);
+//		edges = e.process(edges);
+		cv::threshold(edges, edges, 64, 255, edges.type());
+		cv::cvtColor(edges, edges, CV_GRAY2BGR);
+		edges = e2.process(edges);
+		char* fpstxt = new char[10];
+		std::sprintf(fpstxt, "%i fps", frameRate);
+		cv::putText(edges, std::string(fpstxt), cv::Point(30, 40), cv::FONT_HERSHEY_PLAIN, 3, cv::Scalar(0, 255, 0), 3);
+		imshow("edges", edges);
+		if(cv::waitKey(30) >= 0) break;
+	}
+
+	return 0;
+}

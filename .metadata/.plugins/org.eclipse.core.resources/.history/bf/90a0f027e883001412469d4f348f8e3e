@@ -1,0 +1,21 @@
+package org.citruscircuits.vision.effects;
+
+import java.util.ArrayList;
+
+import org.opencv.core.Mat;
+
+public class EffectChain extends ImageEffect {
+	private ArrayList<ImageEffect> effectChain;
+	
+	
+	@Override
+	public Mat process(Mat original) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void addAfter(ImageEffect i) {
+		effectChain
+	}
+	
+}

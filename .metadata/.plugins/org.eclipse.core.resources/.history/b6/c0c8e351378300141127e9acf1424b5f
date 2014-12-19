@@ -1,0 +1,7 @@
+package org.citruscircuits.vision.gui;
+
+import java.awt.Window;
+
+public class CVWindow extends Window {
+
+}

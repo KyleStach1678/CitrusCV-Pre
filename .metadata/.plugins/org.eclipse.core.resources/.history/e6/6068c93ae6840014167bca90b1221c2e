@@ -1,0 +1,18 @@
+/*
+ * ScanLineEffect.cpp
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#include "ScanLineEffect.h"
+
+ScanLineEffect::ScanLineEffect() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ScanLineEffect::~ScanLineEffect() {
+	// TODO Auto-generated destructor stub
+}
+

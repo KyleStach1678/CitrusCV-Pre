@@ -1,0 +1,21 @@
+/*
+ * BrightnessContrastEffect.cpp
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#include "BrightnessContrastEffect.h"
+
+BrightnessContrastEffect::BrightnessContrastEffect() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BrightnessContrastEffect::~BrightnessContrastEffect() {
+	// TODO Auto-generated destructor stub
+}
+
+cv::Scalar BrightnessContrastEffect::processPixel(cv::Scalar pixel, int row, int col) {
+
+}

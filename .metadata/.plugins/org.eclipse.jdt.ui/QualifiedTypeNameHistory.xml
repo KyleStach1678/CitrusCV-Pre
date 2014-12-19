@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.citruscircuits.vision.gui.CVWindow"/>
+<fullyQualifiedTypeName name="org.opencv.core.MatOfByte"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="java.io.ByteArrayInputStream"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="java.awt.image.DataBufferByte"/>
+<fullyQualifiedTypeName name="org.opencv.imgproc.Imgproc"/>
+<fullyQualifiedTypeName name="java.awt.Frame"/>
+<fullyQualifiedTypeName name="java.awt.Component"/>
+<fullyQualifiedTypeName name="java.awt.Image"/>
+<fullyQualifiedTypeName name="com.atul.JavaOpenCV.Imshow"/>
+<fullyQualifiedTypeName name="org.opencv.core.Mat"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="java.awt.event.WindowStateListener"/>
+<fullyQualifiedTypeName name="java.awt.event.WindowListener"/>
+<fullyQualifiedTypeName name="javax.swing.WindowConstants"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.opencv.highgui.Highgui"/>
+<fullyQualifiedTypeName name="org.opencv.core.Size"/>
+<fullyQualifiedTypeName name="org.citruscircuits.vision.effects.BleedEffect"/>
+<fullyQualifiedTypeName name="org.opencv.core.CvType"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.opencv.core.Core"/>
+<fullyQualifiedTypeName name="org.opencv.core.Point"/>
+<fullyQualifiedTypeName name="org.opencv.core.Scalar"/>
+<fullyQualifiedTypeName name="org.citruscircuits.vision.effects.FramesEffect"/>
+</qualifiedTypeNameHistroy>

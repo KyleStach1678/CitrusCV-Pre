@@ -1,0 +1,14 @@
+package org.citruscircuits.vision.detectors;
+
+import org.opencv.core.Mat;
+import org.opencv.core.Rect;
+
+public class ContourDetector extends ObjectDetector {
+
+	@Override
+	public Rect findTarget(Mat source) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

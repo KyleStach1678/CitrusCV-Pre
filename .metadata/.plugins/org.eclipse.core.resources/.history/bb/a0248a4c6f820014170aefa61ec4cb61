@@ -1,0 +1,16 @@
+package org.citruscircuits.vision;
+
+public class Boot {
+
+	public static void main(String[] args) {
+		initCV();
+		ObjectTracker objTrack = new ObjectTracker();
+		objTrack.start();
+	}
+
+	private static void initCV() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

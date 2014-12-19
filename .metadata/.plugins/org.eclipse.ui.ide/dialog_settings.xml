@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.android.ide.eclipse.adt.package.feature:23.0.2.1259578"/>
+		<item value="com.google.gdt.eclipse.suite.e42.feature:3.8.0.v201410302155-rel-r42"/>
+		<item value="org.eclipse.cdt.build.crossgcc:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.bupc:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.core.lrparser.feature:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.core.parser.upc.feature:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.debug.gdbjtag:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.examples.dsf:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.gdb:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.managedbuilder.llvm:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.sdk:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.util:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt.xlc.feature:8.5.0.201409172108"/>
+		<item value="org.eclipse.cdt:8.5.0.201409172108"/>
+		<item value="org.eclipse.egit.import:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.egit:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.emf.common:2.11.0.v20141027-0406"/>
+		<item value="org.eclipse.emf.ecore:2.11.0.v20141027-0406"/>
+		<item value="org.eclipse.help:2.1.0.v20141029-2000"/>
+		<item value="org.eclipse.jgit:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.platform:4.5.0.v20141029-2000"/>
+		<item value="org.eclipse.rcp:4.5.0.v20141029-2000"/>
+		<item value="org.eclipse.wb.core.feature:1.7.0.r44x201405021445"/>
+		<item value="org.eclipse.wb.core.xml.feature:1.7.0.r44x201405021458"/>
+		<item value="org.eclipse.wb.css.feature:1.7.0.r42x201405021453"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="289" key="DIALOG_Y_ORIGIN"/>
+		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="679" key="DIALOG_X_ORIGIN"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.cdt.ui.wizards.NewCWizard1" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+		</list>
+	</section>
+</section>

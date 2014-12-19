@@ -1,0 +1,21 @@
+/*
+ * ObjectTracker.h
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#ifndef OBJECTTRACKER_H_
+#define OBJECTTRACKER_H_
+
+#include <opencv2/opencv.hpp>
+#include <opencv2/core/core.hpp>
+
+class ObjectTracker {
+public:
+	Mat x;
+	ObjectTracker();
+	virtual ~ObjectTracker();
+};
+
+#endif /* OBJECTTRACKER_H_ */

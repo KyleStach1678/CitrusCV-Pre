@@ -1,0 +1,21 @@
+/*
+ * BrightnessContrastEffect.h
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#ifndef EFFECT_BRIGHTNESSCONTRASTEFFECT_H_
+#define EFFECT_BRIGHTNESSCONTRASTEFFECT_H_
+
+#include "ImageEffect.h"
+
+class BrightnessContrastEffect : public ImageEffect {
+	int contrast, brightness;
+public:
+	unsigned char* processPixel(unsigned char[3], int row, int col);
+	BrightnessContrastEffect(int alpha = 1, int beta = 0);
+	virtual ~BrightnessContrastEffect();
+};
+
+#endif /* EFFECT_BRIGHTNESSCONTRASTEFFECT_H_ */

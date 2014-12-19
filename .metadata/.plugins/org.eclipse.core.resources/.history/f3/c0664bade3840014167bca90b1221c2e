@@ -1,0 +1,25 @@
+/*
+ * BrightnessContrastEffect.cpp
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#include "BrightnessContrastEffect.h"
+
+BrightnessContrastEffect::BrightnessContrastEffect(float alpha, int beta) {
+	contrast = alpha;
+	brightness = beta;
+}
+
+BrightnessContrastEffect::~BrightnessContrastEffect() {
+	// TODO Auto-generated destructor stub
+}
+
+cv::Vec3b BrightnessContrastEffect::processPixel(cv::Vec3b pixel, int row, int col) {
+	cv::Scalar retval;
+	retval.val[0] = pixel.val[0] * contrast + brightness;
+	retval.val[1] = pixel.val[1] * contrast + brightness;
+	retval.val[2] = pixel.val[2] * contrast + brightness;
+	return retval;
+}

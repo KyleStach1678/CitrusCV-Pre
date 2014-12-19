@@ -1,0 +1,5 @@
+package org.citruscircuits.vision.effects;
+
+public class Effect {
+	
+}

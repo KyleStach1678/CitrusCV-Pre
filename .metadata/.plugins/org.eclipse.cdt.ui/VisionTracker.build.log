@@ -1,0 +1,16 @@
+18:18:37 **** Incremental Build of configuration Debug for project VisionTracker ****
+Info: Internal Builder is used for build
+g++ "-LC:\\Program Files (x86)\\Windows Kits\\Other Libraries\\OPENCV\\libs\\x86" -o VisionTracker.exe "src\\VisionTracker.o" -lopencv_cored -lopencv_imgprocd -lopencv_highguid 
+src\VisionTracker.o: In function `main':
+C:\Users\Kyle\Desktop\Programming\Citrus Circuits\citrus-vision-2014\VisionTracker\Debug/../src/VisionTracker.cpp:14: undefined reference to `cv::namedWindow(std::string const&, int)'
+C:\Users\Kyle\Desktop\Programming\Citrus Circuits\citrus-vision-2014\VisionTracker\Debug/../src/VisionTracker.cpp:15: undefined reference to `cv::imread(std::string const&, int)'
+C:\Users\Kyle\Desktop\Programming\Citrus Circuits\citrus-vision-2014\VisionTracker\Debug/../src/VisionTracker.cpp:16: undefined reference to `cv::_InputArray::_InputArray(cv::Mat const&)'
+C:\Users\Kyle\Desktop\Programming\Citrus Circuits\citrus-vision-2014\VisionTracker\Debug/../src/VisionTracker.cpp:16: undefined reference to `cv::imshow(std::string const&, cv::_InputArray const&)'
+src\VisionTracker.o: In function `ZN2cv3MatD1Ev':
+C:/Program Files (x86)/Windows Kits/Other Libraries/OPENCV/include/opencv2/core/mat.hpp:278: undefined reference to `cv::fastFree(void*)'
+src\VisionTracker.o: In function `ZN2cv3Mat7releaseEv':
+C:/Program Files (x86)/Windows Kits/Other Libraries/OPENCV/include/opencv2/core/mat.hpp:367: undefined reference to `cv::Mat::deallocate()'
+collect2.exe: error: ld returned 1 exit status
+
+18:18:37 Build Finished (took 121ms)
+

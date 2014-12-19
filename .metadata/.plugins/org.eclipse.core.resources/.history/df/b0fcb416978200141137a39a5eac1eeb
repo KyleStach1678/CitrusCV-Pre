@@ -1,0 +1,56 @@
+package org.citruscircuits.vision.detectors;
+
+import java.util.ArrayList;
+
+import org.opencv.core.*;
+import org.opencv.imgproc.*;
+
+public class ColorDetector extends ObjectDetector {
+	float[][] HSV = {{0, 0}, {0, 0}, {0, 0}};
+	
+	public ColorDetector(float lowH, float highH, float lowS, float highS, float lowV, float highV) 
+	{
+		HSV[0][0] = lowH;
+		HSV[0][1] = highH;
+		HSV[1][0] = lowS;
+		HSV[1][1] = highS;
+		HSV[2][0] = lowV;
+		HSV[2][1] = highV;
+	}
+	
+	public Rect getBoundingBox(Mat source)
+	{
+		Rect retval = null;
+		
+		// Find contours
+		ArrayList<MatOfPoint> contours = new ArrayList<MatOfPoint>();
+        Mat hierarchy = new Mat();
+        Imgproc.findContours(source, contours, hierarchy, Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_TC89_KCOS);
+		
+        // Find biggest bounding box
+        float largestArea = 0;
+        for (int i = 0; i < contours.size(); i++) 
+        {
+        	if(Imgproc.contourArea(contours.get(i)) > largestArea)
+        	{
+        		
+        	}
+        }
+        
+		return retval;
+	}
+	
+	@Override
+	public Rect findTarget(Mat source) {
+		Mat imgThresholded = null, imgHSV = null;
+		Imgproc.cvtColor(source, imgHSV, Imgproc.COLOR_BGR2HSV);
+		Core.inRange(imgHSV, new Scalar(HSV[0][0], HSV[1][0], HSV[2][0]), new Scalar(HSV[0][1], HSV[1][1], HSV[2][1]), imgThresholded);
+		Imgproc.dilate(source, source, Imgproc.getStructuringElement(Imgproc.MORPH_ELLIPSE, new Size(10, 10)));
+		Imgproc.erode(source, source, Imgproc.getStructuringElement(Imgproc.MORPH_ELLIPSE, new Size(10, 10)));
+		
+		
+		
+		return null;
+	}
+
+}

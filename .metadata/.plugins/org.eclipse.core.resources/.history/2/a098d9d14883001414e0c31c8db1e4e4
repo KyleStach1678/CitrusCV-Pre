@@ -1,0 +1,51 @@
+package org.citruscircuits.vision;
+
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+import java.awt.event.WindowStateListener;
+
+import javax.swing.JFrame;
+
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.Size;
+
+import com.atul.JavaOpenCV.Imshow;
+
+
+
+public class Boot implements WindowListener {
+	public boolean open = true;
+	public static void main(String[] args) {
+		Boot wsl = new Boot();
+		System.loadLibrary("opencv_java249");
+		Imshow im = new Imshow("test");
+		im.showImage(Mat.zeros(new Size(100, 100), CvType.CV_8UC3));
+		im.Window.addWindowStateListener(wsl);
+		ObjectTracker objtrack = new ObjectTracker();
+		objtrack.start();
+		while(true) {
+			objtrack.update();
+			System.out.println(im.Window.getState());
+			im.showImage(objtrack.getFrame());
+			if (!wsl.open)
+			{
+				break;
+			}
+		}
+		objtrack.closeCap();
+	}
+
+	@Override
+	public void windowStateChanged(WindowEvent arg0) {
+		switch(arg0.getID()) {
+		case WindowEvent.WINDOW_CLOSED:
+			open = false;
+			break;
+		default:
+			open = false;
+			break;
+		}
+	}
+
+}

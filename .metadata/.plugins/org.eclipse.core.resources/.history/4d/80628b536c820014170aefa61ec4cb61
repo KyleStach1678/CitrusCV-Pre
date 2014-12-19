@@ -1,0 +1,8 @@
+package org.citruscircuits.vision;
+import org.opencv.core.*;
+import org.opencv.highgui.*;
+public class ColorTracker {
+	public static void main() {
+		Mat img = Highgui.imread("test.jpg", Highgui.CV_LOAD_IMAGE_COLOR);
+	}
+}

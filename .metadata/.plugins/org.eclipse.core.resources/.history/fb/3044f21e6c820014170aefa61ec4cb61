@@ -1,0 +1,5 @@
+package org.citruscircuits.vision;
+import org.opencv.highgui.*;
+public class ColorTracker {
+
+}

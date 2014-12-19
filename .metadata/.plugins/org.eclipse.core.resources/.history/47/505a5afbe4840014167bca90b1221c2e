@@ -1,0 +1,31 @@
+/*
+ * IteratePixelEffect.cpp
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#include "IteratePixelEffect.h"
+#include <iostream>
+
+IteratePixelEffect::IteratePixelEffect() {
+	// TODO Auto-generated constructor stub
+
+}
+
+IteratePixelEffect::~IteratePixelEffect() {
+	// TODO Auto-generated destructor stub
+}
+
+cv::Mat IteratePixelEffect::process(cv::Mat in) {
+	cv::Mat altered = in.clone();
+	for (int row = 0; row < in.rows; row++ ) {
+		for(int col = 0; col < in.cols; col++ ) {
+//			altered.at<cv::Vec3b>(row, col) = processPixel(in.at<cv::Vec3b>(row, col), row, col);
+			for (int c = 0; c < 3; c++) {
+				altered.at<cv::Vec3b>(row, col)[c] = cv::saturate_cast<uchar>(1.4 *(in.at<cv::Vec3b>(row, col)[c] ) + 100);
+			}
+		}
+	}
+	return altered;
+}

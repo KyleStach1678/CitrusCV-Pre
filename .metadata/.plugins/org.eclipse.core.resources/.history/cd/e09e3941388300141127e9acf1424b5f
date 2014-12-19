@@ -1,0 +1,48 @@
+package org.citruscircuits.vision.gui;
+
+import java.awt.Window;
+import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferByte;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
+
+import org.opencv.core.Mat;
+
+public class CVWindow extends JFrame {
+	public ImageIcon image;
+	public CVWindow(String title) {
+		super(title);
+		image = new ImageIcon();
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+	}
+
+	public BufferedImage toBufferedImage(Mat m) {
+		int type = BufferedImage.TYPE_BYTE_GRAY;
+		if (m.channels() > 1) {
+			type = BufferedImage.TYPE_3BYTE_BGR;
+		}
+		int bufferSize = m.channels() * m.cols() * m.rows();
+		byte[] b = new byte[bufferSize];
+		m.get(0, 0, b); // get all the pixels
+		BufferedImage image = new BufferedImage(m.cols(), m.rows(), type);
+		final byte[] targetPixels = ((DataBufferByte) image.getRaster()
+				.getDataBuffer()).getData();
+		System.arraycopy(b, 0, targetPixels, 0, b.length);
+		return image;
+
+	}
+	
+	public void draw(Mat m) {
+		setBounds(getX(), getY(), m.cols(), m.rows());
+		BufferedImage bufImg = null;
+		try {
+			bufImg = toBufferedImage(m);
+			image.setImage(bufImg);
+			Window.Window.pack();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

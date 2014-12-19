@@ -1,0 +1,18 @@
+/*
+ * ImageEffect.h
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#ifndef EFFECT_IMAGEEFFECT_H_
+#define EFFECT_IMAGEEFFECT_H_
+
+class ImageEffect {
+public:
+	virtual cv::Mat process(cv::Mat& in);
+	ImageEffect();
+	virtual ~ImageEffect();
+};
+
+#endif /* EFFECT_IMAGEEFFECT_H_ */

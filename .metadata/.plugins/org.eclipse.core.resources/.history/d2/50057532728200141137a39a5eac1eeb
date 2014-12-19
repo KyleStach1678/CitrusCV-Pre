@@ -1,0 +1,18 @@
+package org.citruscircuits.vision.effects;
+
+import org.opencv.core.Mat;
+import org.opencv.core.Scalar;
+
+public abstract class IteratePixelEffect extends ImageEffect {
+	@Override
+	public Mat process(Mat original) {
+		for (int row = 0; row < original.rows(); row++ ) {
+	        for( col=0; col<mat->cols; col++ ) {
+	            s += *ptr++;
+	        }
+	    }
+		return null;
+	}
+	
+	public abstract Scalar processPixel(Scalar in); // Called once for every pixel
+}

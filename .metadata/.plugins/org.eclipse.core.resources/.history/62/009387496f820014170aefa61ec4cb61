@@ -1,0 +1,10 @@
+package org.citruscircuits.vision;
+
+public class Boot {
+
+	public static void main(String[] args) {
+		ObjectTracker objTrack = new ObjectTracker();
+		objTrack.start();
+	}
+
+}
