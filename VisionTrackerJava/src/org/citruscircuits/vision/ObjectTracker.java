@@ -109,12 +109,11 @@ public class ObjectTracker {
 
 	public void start() {
 		cap = new VideoCapture();
-		//		cap.open("http://192.168.1.7:8081/video.mjpg");
-		cap.open(0);
-		//ImageEffect effect1 = new SelectColorEffect(40, 80, 64, 192, 64, 255);
+//		cap.open("http://FRC:FRC@10.16.78.11/axis-cgi/mjpg/video.cgi");
+		cap.open("http://10.16.78.11/mjpg/video.mjpg");
 		SelectColorEffect effect1 = new SelectColorEffect();
-		effect1.setTargetColor(ColorType.HSV, new Scalar(40, 64, 120), new Scalar(80, 192, 255));
-		effect1.setTargetColor(ColorType.YUV, new Scalar(180, 60, 80), new Scalar(255, 130, 120));
+//		effect1.setTargetColor(ColorType.HSV, new Scalar(40, 64, 120), new Scalar(80, 255, 255));
+		effect1.setTargetColor(ColorType.YUV, new Scalar(0, 100, 80), new Scalar(192, 130, 110));
 		detectorEffects = new EffectChain();
 		frameEffects = new EffectChain();
 		detectorEffects.addToEnd(effect1);

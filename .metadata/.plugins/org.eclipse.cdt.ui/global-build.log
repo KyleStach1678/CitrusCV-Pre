@@ -1,344 +1,139 @@
-16:33:51 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "Effect\\BrightnessContrastEffect.o" "..\\Effect\\BrightnessContrastEffect.cpp" 
-g++: error: ..\Effect\BrightnessContrastEffect.cpp: No such file or directory
-g++: fatal error: no input files
-compilation terminated.
-16:34:11 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "Effect\\BrightnessContrastEffect.o" "..\\Effect\\BrightnessContrastEffect.cpp" 
-Assembler messages:
-Fatal error: can't create Effect\BrightnessContrastEffect.o: No such file or directory
-16:34:31 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "Effect\\IteratePixelEffect.o" "..\\Effect\\IteratePixelEffect.cpp" 
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "Effect\\ScanLineEffect.o" "..\\Effect\\ScanLineEffect.cpp" 
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "Effect\\BrightnessContrastEffect.o" "..\\Effect\\BrightnessContrastEffect.cpp" 
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "Effect\\ImageEffect.o" "..\\Effect\\ImageEffect.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-Info: Nothing to build for VisionTrackerCPP
-16:35:25 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:35:38 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:36:18 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
+
+**** Rebuild of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o Effect\BrightnessContrastEffect.o ..\Effect\BrightnessContrastEffect.cpp
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o Effect\IteratePixelEffect.o ..\Effect\IteratePixelEffect.cpp
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o Effect\ImageEffect.o ..\Effect\ImageEffect.cpp
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o Effect\ScanLineEffect.o ..\Effect\ScanLineEffect.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 20834  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o Effect\SelectColorEffect.o ..\Effect\SelectColorEffect.cpp
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 13860  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 5929  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 5867  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
 ..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:39:12: error: base operand of '->' has non-pointer type 'ScanLineEffect'
-   edges = e->process(frame);
-            ^
-16:36:28 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:43:27 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:33:25: error: 'clock' was not declared in this scope
-   int curTimeMs = clock();
-                         ^
-..\ObjectTracker.cpp:47:43: error: invalid conversion from 'int' to 'const char*' [-fpermissive]
-   cv::putText(edges, std::string(frameRate), cv::Point(10, 10), cv::FONT_HERSHEY_COMPLEX, 28, cv::Scalar(255, 255, 255));
-                                           ^
-In file included from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\string:53:0,
-                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\locale_classes.h:40,
-                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\ios_base.h:41,
-                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\ios:42,
-                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\istream:38,
-                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\sstream:38,
-                 from c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\complex:45,
-                 from C:\Users\Kyle\Desktop\Programming\Citrus Circuits\Vision\VisionTrackerCPP\opencv\include/opencv2/core/core.hpp:59,
-                 from C:\Users\Kyle\Desktop\Programming\Citrus Circuits\Vision\VisionTrackerCPP\opencv\include/opencv2/opencv.hpp:47,
-                 from ..\ObjectTracker.h:11,
-                 from ..\ObjectTracker.cpp:8:
-c:\mingw\lib\gcc\mingw32\4.8.1\include\c++\bits\basic_string.tcc:212:5: error:   initializing argument 1 of 'std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]' [-fpermissive]
-     basic_string<_CharT, _Traits, _Alloc>::
-     ^
-16:46:14 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:34:25: error: 'clock' was not declared in this scope
-   int curTimeMs = clock();
-                         ^
-..\ObjectTracker.cpp:49:38: error: 'sprintf' was not declared in this scope
-   sprintf(fpstxt, "%i fps", frameRate);
-                                      ^
-16:47:07 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:40:29: warning: 't' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   GetSystemTimeAsFileTime(t);
-                             ^
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:47:18 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:40:29: warning: 't' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   GetSystemTimeAsFileTime(t);
-                             ^
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:47:32 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:47:40 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:47:58 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:48:14 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:48:25 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:48:36 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:49:10 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:49:21 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:49:29 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:49:44 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:50:112: error: expected primary-expression before ')' token
-   cv::putText(edges, std::string(fpstxt), cv::Point(30, 30), cv::FONT_HERSHEY_PLAIN, 3, cv::Scalar(0, 255, 0), );
-                                                                                                                ^
-16:49:54 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:50:07 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:50:37 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:50:50 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:51:40 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:52:16 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:52:29 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:52:39 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:52:47 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:53:18 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:54:34 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:55:26 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:55:44 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:55:58 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:56:17 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:56:26 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:57:35 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:57:50 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:58:05 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:58:24 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:58:36 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:58:44 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:59:16 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-16:59:25 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-17:01:55 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:54:55: error: expected primary-expression before ':' token
-   cv::erode(edges, edges, cv::getStructuringElement(cv:MORPH_RECT, cv::Size(1, 1)));
-                                                       ^
-17:02:40 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:54:55: error: expected primary-expression before ':' token
-   cv::erode(edges, edges, cv::getStructuringElement(cv:MORPH_RECT, cv::Size(1, 1), Point(0, 0));
-                                                       ^
-..\ObjectTracker.cpp:54:94: error: 'Point' was not declared in this scope
-   cv::erode(edges, edges, cv::getStructuringElement(cv:MORPH_RECT, cv::Size(1, 1), Point(0, 0));
-                                                                                              ^
-..\ObjectTracker.cpp:54:94: note: suggested alternatives:
-In file included from C:\Users\Kyle\Desktop\Programming\Citrus Circuits\Vision\VisionTrackerCPP\opencv\include/opencv2/opencv.hpp:47:0,
-                 from ..\ObjectTracker.h:11,
-                 from ..\ObjectTracker.cpp:8:
-C:\Users\Kyle\Desktop\Programming\Citrus Circuits\Vision\VisionTrackerCPP\opencv\include/opencv2/core/core.hpp:893:17: note:   'cv::Point'
- typedef Point2i Point;
-                 ^
-C:\Users\Kyle\Desktop\Programming\Citrus Circuits\Vision\VisionTrackerCPP\opencv\include/opencv2/core/core.hpp:893:17: note:   'cv::Point'
-17:03:29 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-..\ObjectTracker.cpp: In function 'int main()':
-..\ObjectTracker.cpp:54:55: error: expected primary-expression before ':' token
-   cv::erode(edges, edges, cv::getStructuringElement(cv:MORPH_RECT, cv::Size(1, 1));
-                                                       ^
-18:17:32 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:17:45 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:17:53 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:18:01 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:18:17 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:18:31 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:18:38 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:18:50 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:19:10 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:19:36 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:19:49 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:20:08 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:20:28 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:20:45 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: cannot open output file VisionTrackerCPP.exe: Permission denied
+..\ObjectTracker.cpp:33:52: error: conversion from 'SelectColorEffect*' to non-scalar type 'SelectColorEffect' requested
+  SelectColorEffect effect1 = new SelectColorEffect();
+                                                    ^
+Build error occurred, build is stopped
+Time consumed: 3489  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+ObjectTracker.o: In function `main':
+E:\techStuff\KSCV-Pre\VisionTrackerCPP\Debug/../ObjectTracker.cpp:34: undefined reference to `SelectColorEffect::setTargetColor(int, cv::Scalar_<double>, cv::Scalar_<double>)'
 collect2.exe: error: ld returned 1 exit status
-18:20:59 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:21:13 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:21:44 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: cannot open output file VisionTrackerCPP.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-18:21:57 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:22:11 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-18:22:34 **** Incremental Build of configuration Debug for project VisionTrackerCPP ****
-Info: Internal Builder is used for build
-g++ "-IC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o "..\\ObjectTracker.cpp" 
-g++ "-LC:\\Users\\Kyle\\Desktop\\Programming\\Citrus Circuits\\Vision\\VisionTrackerCPP\\opencv\\lib" -o VisionTrackerCPP.exe ObjectTracker.o "Effect\\ScanLineEffect.o" "Effect\\IteratePixelEffect.o" "Effect\\ImageEffect.o" "Effect\\BrightnessContrastEffect.o" -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll 
-Info: Nothing to build for VisionTrackerCPP
-Info: Nothing to build for VisionTrackerCPP
+Build error occurred, build is stopped
+Time consumed: 7446  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o Effect\SelectColorEffect.o ..\Effect\SelectColorEffect.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 12176  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 9884  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 7721  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 6352  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+g++ -IE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\include -O0 -g3 -Wall -c -fmessage-length=0 -o ObjectTracker.o ..\ObjectTracker.cpp
+g++ -LE:\techStuff\KSCV-Pre\VisionTrackerCPP\opencv\lib -o VisionTrackerCPP.exe ObjectTracker.o Effect\SelectColorEffect.o Effect\ScanLineEffect.o Effect\IteratePixelEffect.o Effect\ImageEffect.o Effect\BrightnessContrastEffect.o -lopencv_core249.dll -lopencv_imgproc249.dll -lopencv_highgui249.dll
+Build complete for project VisionTrackerCPP
+Time consumed: 6097  ms.  
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP
+
+**** Build of configuration Debug for project VisionTrackerCPP ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for VisionTrackerCPP

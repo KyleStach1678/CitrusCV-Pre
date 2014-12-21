@@ -1,0 +1,27 @@
+/*
+ * SelectColorEffect.h
+ *
+ *  Created on: Dec 21, 2014
+ *      Author: Citrus Circuits
+ */
+
+#ifndef SELECTCOLOREFFECT_H_
+#define SELECTCOLOREFFECT_H_
+
+#include "ImageEffect.h"
+#include <opencv2/opencv.hpp>
+
+#define RGB 0
+#define HSV 1
+#define LAB 2
+#define YUV 3
+
+class SelectColorEffect: public ImageEffect {
+public:
+	SelectColorEffect();
+	virtual cv::Mat process(cv::Mat in);
+	void setTargetColor(int type, cv::Scalar low, cv::Scalar high);
+	virtual ~SelectColorEffect();
+};
+
+#endif /* SELECTCOLOREFFECT_H_ */

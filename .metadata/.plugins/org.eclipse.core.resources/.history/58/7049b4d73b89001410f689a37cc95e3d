@@ -1,0 +1,26 @@
+/*
+ * SelectColorEffect.cpp
+ *
+ *  Created on: Dec 21, 2014
+ *      Author: Citrus Circuits
+ */
+
+#include "SelectColorEffect.h"
+
+SelectColorEffect::SelectColorEffect() {
+	dilateErodeElement = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5));
+}
+
+SelectColorEffect::~SelectColorEffect() {
+	// TODO Auto-generated destructor stub
+}
+
+cv::Mat SelectColorEffect::process(cv::Mat in)
+{
+
+}
+
+void setTargetColor(int type, cv::Scalar low, cv::Scalar high)
+{
+
+}

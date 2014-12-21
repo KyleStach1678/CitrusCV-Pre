@@ -1,0 +1,20 @@
+/*
+ * ImageEffect.h
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#ifndef EFFECT_IMAGEEFFECT_H_
+#define EFFECT_IMAGEEFFECT_H_
+
+#include <opencv2/opencv.hpp>
+
+class ImageEffect {
+public:
+	virtual cv::Mat process(cv::Mat in) = 0;
+	ImageEffect();
+	virtual ~ImageEffect();
+};
+
+#endif /* EFFECT_IMAGEEFFECT_H_ */

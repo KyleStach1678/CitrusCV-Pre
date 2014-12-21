@@ -8,7 +8,7 @@
 #ifndef EFFECT_IMAGEEFFECT_H_
 #define EFFECT_IMAGEEFFECT_H_
 
-#include <opencv2/opencv.hpp>
+#include "opencv2/opencv.hpp"
 
 class ImageEffect {
 public:

@@ -1,0 +1,21 @@
+/*
+ * SelectColorEffect.h
+ *
+ *  Created on: Dec 21, 2014
+ *      Author: Citrus Circuits
+ */
+
+#ifndef SELECTCOLOREFFECT_H_
+#define SELECTCOLOREFFECT_H_
+
+#include "ImageEffect.h"
+#include <opencv2/opencv.hpp>
+
+class SelectColorEffect: public ImageEffect {
+public:
+	SelectColorEffect();
+	virtual cv::Mat process(cv::Mat in) override;
+	virtual ~SelectColorEffect();
+};
+
+#endif /* SELECTCOLOREFFECT_H_ */

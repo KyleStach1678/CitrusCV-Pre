@@ -1,0 +1,22 @@
+/*
+ * SelectColorEffect.cpp
+ *
+ *  Created on: Dec 21, 2014
+ *      Author: Citrus Circuits
+ */
+
+#include "SelectColorEffect.h"
+
+SelectColorEffect::SelectColorEffect() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SelectColorEffect::~SelectColorEffect() {
+	// TODO Auto-generated destructor stub
+}
+
+cv::Mat SelectColorEffect::process(cv::Mat in)
+{
+
+}

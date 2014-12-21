@@ -8,13 +8,13 @@
 #include "ObjectTracker.h"
 #include "Effect/BrightnessContrastEffect.h"
 #include "Effect/ScanLineEffect.h"
+#include "Effect/SelectColorEffect.h"
 #include <windows.h>
 #include <iostream>
 #include <cstdio>
 #include <ctime>
 
 ObjectTracker::ObjectTracker() {
-	// TODO Auto-generated constructor stub
 
 }
 
@@ -22,42 +22,43 @@ ObjectTracker::~ObjectTracker() {
 	// TODO Auto-generated destructor stub
 }
 
+cv::Scalar min, max;
+int y_min_slider = 0, y_max_slider = 0, u_min_slider = 0, u_max_slider = 0, v_min_slider = 0, v_max_slider = 0;
+
+void on_trackbar( int, void* )
+{
+	min = cv::Scalar(y_min_slider, u_min_slider, v_min_slider);
+	max = cv::Scalar(y_max_slider, u_max_slider, v_max_slider);
+}
+
 int main() {
 	ScanLineEffect e;
 	BrightnessContrastEffect e2(1, 0);
-	cv::VideoCapture cap(0); // open the default camera
+	cv::VideoCapture cap("http://10.16.78.11/mjpg/video.mjpg"); // open the default camera
 	if(!cap.isOpened())  // check if we succeeded
 		return -1;
 	cv::Mat dilateErodeElement = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(1, 1));
-	cv::namedWindow("edges",1);
-	int lastTimeMs;
-	int frameRate;
+	cv::namedWindow("edges", 0);
+	cv::namedWindow("bars", 0);
+	SelectColorEffect effect1;
+	effect1.setTargetColor(YUV, cv::Scalar(0, 0, 0), cv::Scalar(255, 255, 255));
+	min = cv::Scalar(0, 0, 0);
+	max = cv::Scalar(255, 255, 255);
+	cv::createTrackbar("Yv", "bars", &y_min_slider, 255, on_trackbar );
+	cv::createTrackbar("Y^", "bars", &y_max_slider, 255, on_trackbar );
+	cv::createTrackbar("Uv", "bars", &u_min_slider, 255, on_trackbar );
+	cv::createTrackbar("U^", "bars", &u_max_slider, 255, on_trackbar );
+	cv::createTrackbar("Vv", "bars", &v_min_slider, 255, on_trackbar );
+	cv::createTrackbar("V^", "bars", &v_max_slider, 255, on_trackbar );
 	for(;;)
 	{
-		long curTimeMs = std::clock();
-		if(rand() % 10 == 0)
-			frameRate = 1000 / (curTimeMs - lastTimeMs);
-		lastTimeMs = curTimeMs;
 		cv::Mat edges;
 		cv::Mat frame;
 		cap >> frame; // get a new frame from camera
 		//cv::cvtColor(frame, edges, CV_BGR2GRAY);
 		edges = frame;
-		cv::GaussianBlur(edges, edges, cv::Size(3, 3), 1.5);
-		cv::GaussianBlur(edges, edges, cv::Size(3, 3), 1.5);
-		//cv::Laplacian(edges, edges, frame.depth());
-		//cv::convertScaleAbs(edges, edges);
-		//Canny(edges, edges, 0, 30, 3);
-//		edges = e.process(edges);
-		//cv::cvtColor(edges, edges, CV_GRAY2BGR);
-		edges = e2.process(edges);
-		cv::cvtColor(edges, edges, CV_BGR2GRAY);
-		cv::threshold(edges, edges, 128, 255, edges.type());
-		//cv::erode(edges, edges, dilateErodeElement);
-		cv::cvtColor(edges, edges, CV_GRAY2BGR);
-		char* fpstxt = new char[10];
-		std::sprintf(fpstxt, "%i fps", frameRate);
-		cv::putText(edges, std::string(fpstxt), cv::Point(30, 40), cv::FONT_HERSHEY_PLAIN, 3, cv::Scalar(0, 255, 0), 3);
+		effect1.setTargetColor(YUV, min, max);
+		edges = effect1.process(edges);
 		imshow("edges", edges);
 		if(cv::waitKey(30) >= 0) break;
 	}

@@ -16,22 +16,6 @@ public class SelectColorEffect extends ImageEffect {
 	public boolean acc;
 	ColorType type;
 	
-	public static Mat addMats(Mat a, Mat b) {
-		if (!(a.rows() == b.rows() && a.cols() == b.cols()))
-			return null;
-		Mat c = Mat.zeros(a.rows(), a.cols(), a.type());
-		for (int row = 0; row < a.rows(); row++ ) {
-			for(int col = 0; col < a.cols(); col++ ) {
-				double[] pix = a.get(row, col);
-				for (int i = 0; i < a.channels(); i++) {
-					pix[i] += b.get(row, col)[i];
-				}
-				c.put(row, col, pix);
-			}
-		}
-		return c;
-	}
-	
 	public enum ColorType {
 		RGB, LAB, YUV, HSV
 	}

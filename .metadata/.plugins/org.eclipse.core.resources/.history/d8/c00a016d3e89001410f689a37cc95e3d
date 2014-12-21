@@ -1,0 +1,48 @@
+/*
+ * ObjectTracker.cpp
+ *
+ *  Created on: Dec 15, 2014
+ *      Author: Kyle
+ */
+
+#include "ObjectTracker.h"
+#include "Effect/BrightnessContrastEffect.h"
+#include "Effect/ScanLineEffect.h"
+#include "Effect/SelectColorEffect.h"
+#include <windows.h>
+#include <iostream>
+#include <cstdio>
+#include <ctime>
+
+ObjectTracker::ObjectTracker() {
+
+}
+
+ObjectTracker::~ObjectTracker() {
+	// TODO Auto-generated destructor stub
+}
+
+int main() {
+	ScanLineEffect e;
+	BrightnessContrastEffect e2(1, 0);
+	cv::VideoCapture cap("http://10.16.78.11/mjpg/video.mjpg"); // open the default camera
+	if(!cap.isOpened())  // check if we succeeded
+		return -1;
+	cv::Mat dilateErodeElement = cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(1, 1));
+	cv::namedWindow("edges", 0);
+	SelectColorEffect effect1;
+	effect1.setTargetColor(YUV, cv::Scalar(40, 30, 10), cv::Scalar(255, 50, 30));
+	for(;;)
+	{
+		cv::Mat edges;
+		cv::Mat frame;
+		cap >> frame; // get a new frame from camera
+		//cv::cvtColor(frame, edges, CV_BGR2GRAY);
+		edges = frame;
+		edges = effect1.process(edges);
+		imshow("edges", edges);
+		if(cv::waitKey(30) >= 0) break;
+	}
+
+	return 0;
+}

@@ -1,0 +1,19 @@
+/*
+ * SelectColorEffect.h
+ *
+ *  Created on: Dec 21, 2014
+ *      Author: Citrus Circuits
+ */
+
+#ifndef SELECTCOLOREFFECT_H_
+#define SELECTCOLOREFFECT_H_
+
+#include "ImageEffect.h"
+
+class SelectColorEffect: public ImageEffect {
+public:
+	SelectColorEffect();
+	virtual ~SelectColorEffect();
+};
+
+#endif /* SELECTCOLOREFFECT_H_ */

@@ -1,5 +1,0 @@
-package org.citruscircuits.vision.effects;
-
-public abstract class Effect {
-	public abstract Mat process(Mat original); // Alters Original
-}
