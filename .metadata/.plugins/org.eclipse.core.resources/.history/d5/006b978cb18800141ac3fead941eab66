@@ -1,0 +1,5 @@
+package org.citruscircuits.vision.detectors;
+
+public abstract class DetectedObject {
+
+}

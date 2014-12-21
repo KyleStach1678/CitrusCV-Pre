@@ -1,6 +1,7 @@
 package org.citruscircuits.vision;
 
 import org.citruscircuits.vision.detectors.ContourDetector;
+import org.citruscircuits.vision.detectors.DetectedObject;
 import org.citruscircuits.vision.detectors.ObjectDetector;
 import org.citruscircuits.vision.effects.BleedEffect;
 import org.citruscircuits.vision.effects.EffectChain;
@@ -8,11 +9,15 @@ import org.citruscircuits.vision.effects.FramesEffect;
 import org.citruscircuits.vision.effects.ImageEffect;
 import org.citruscircuits.vision.effects.IteratePixelEffect;
 import org.citruscircuits.vision.effects.SelectColorEffect;
+import org.citruscircuits.vision.effects.SelectColorEffect.ColorType;
 import org.opencv.core.Core;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
+import org.opencv.highgui.Highgui;
 import org.opencv.highgui.VideoCapture;
+import org.opencv.imgproc.Imgproc;
 
 
 public class ObjectTracker {
@@ -22,7 +27,7 @@ public class ObjectTracker {
 	ObjectDetector detector;
 	VideoCapture cap;
 
-	public class BrightContrastEffect extends IteratePixelEffect
+	/*public class BrightContrastEffect extends IteratePixelEffect
 	{
 		private float contrast = 1;
 		private int brightness = 0;
@@ -40,6 +45,23 @@ public class ObjectTracker {
 			in[1] += brightness;
 			in[2] += brightness;
 			return in;
+		}
+	}*/
+	public class BrightContrastEffect extends ImageEffect
+	{
+		private float contrast = 1;
+		private int brightness = 0;
+		
+		public BrightContrastEffect(float nContrast, int nBrightness) {
+			this.contrast = nContrast;
+			this.brightness = nBrightness;
+		}
+		
+		@Override
+		public Mat process(Mat original) {
+			Core.multiply(original, new Scalar(contrast, contrast, contrast), original);
+			Core.add(original, new Scalar(brightness, brightness, brightness), original);
+			return original;
 		}
 	}
 	public float getError() // Return the error from -1 (Far left) to 1 (Far right)
@@ -61,20 +83,23 @@ public class ObjectTracker {
 
 	private Mat processFrame() {
 		Mat frameproc = detectorEffects.process(frame.clone());
-		Rect obj = detector.findTarget(frameproc);
-		Core.rectangle(frame, obj.br(), obj.tl(), new Scalar(0, 255, 127));
-		if (obj.width * obj.height > 0)
-		{
-			currentError = ((obj.x + obj.width / 2) - (frame.cols()  / 2));
-			currentError /= (frame.cols() / 2);
+		DetectedObject obj = detector.findTarget(frameproc);
+		if (obj.found()) {
+			obj.draw(frame, new Scalar(255, 0, 255));
+			
+			Rect bb = obj.findBoundingBox();
+			if (bb.width * bb.height > 0)
+			{
+				currentError = ((bb.x + bb.width / 2) - (frame.cols()  / 2));
+				currentError /= (frame.cols() / 2);
+			}
+			else
+			{
+				currentError = 0;
+			}
+	
 		}
-		else
-		{
-			currentError = 0;
-		}
-
 		frame = frameEffects.process(frame);
-
 		return frame;
 	}
 
@@ -86,14 +111,15 @@ public class ObjectTracker {
 		cap = new VideoCapture();
 		//		cap.open("http://192.168.1.7:8081/video.mjpg");
 		cap.open(0);
-		ImageEffect effect1 = new SelectColorEffect(40, 80, 64, 192, 64, 255);
+		//ImageEffect effect1 = new SelectColorEffect(40, 80, 64, 192, 64, 255);
+		SelectColorEffect effect1 = new SelectColorEffect();
+		effect1.setTargetColor(ColorType.HSV, new Scalar(40, 64, 120), new Scalar(80, 192, 255));
+		effect1.setTargetColor(ColorType.YUV, new Scalar(180, 60, 80), new Scalar(255, 130, 120));
 		detectorEffects = new EffectChain();
 		frameEffects = new EffectChain();
 		detectorEffects.addToEnd(effect1);
 
 		frameEffects.addToEnd(new FramesEffect());
-		//effects.addToEnd(new BrightContrastEffect(2.0F, 50));
-		//		effects.addToEnd(new BleedEffect(2F, 11));
 		detector = new ContourDetector();
 	}
 

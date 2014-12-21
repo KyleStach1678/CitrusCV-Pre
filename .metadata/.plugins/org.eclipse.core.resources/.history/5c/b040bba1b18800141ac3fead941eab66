@@ -1,0 +1,8 @@
+package org.citruscircuits.vision.detectors;
+
+import org.opencv.core.*;
+
+public abstract class DetectedObject {
+	public abstract Mat draw(Mat in);
+	public abstract Rect boundingBox;
+}

@@ -1,0 +1,33 @@
+package org.citruscircuits.vision.detectors;
+
+import java.util.ArrayList;
+
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfPoint;
+import org.opencv.core.Rect;
+import org.opencv.imgproc.Imgproc;
+
+public class ContourDetector extends ObjectDetector {
+	@Override
+	public DetectedObject findTarget(Mat source) {
+		DetectedContour retval;
+		
+		// Find contours
+		ArrayList<MatOfPoint> contours = new ArrayList<MatOfPoint>();
+        Mat hierarchy = new Mat();
+        Imgproc.findContours(source.clone(), contours, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_NONE);
+		
+        // Find biggest bounding box
+        float largestArea = 0;
+        for (int i = 0; i < contours.size(); i++) 
+        {
+        	if(Imgproc.contourArea(contours.get(i)) > largestArea)
+        	{
+        		retval.detected = contours.get(i);
+        	}
+        }
+        
+		return retval;
+	}
+
+}

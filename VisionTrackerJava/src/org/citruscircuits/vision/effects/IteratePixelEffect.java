@@ -5,13 +5,12 @@ import org.opencv.core.Mat;
 public abstract class IteratePixelEffect extends ImageEffect {
 	@Override
 	public Mat process(Mat original) {
-		Mat altered = Mat.zeros(original.size(), original.type());
 		for (int row = 0; row < original.rows(); row++ ) {
 	        for(int col = 0; col < original.cols(); col++ ) {
-	            altered.put(row, col, processPixel(original.get(row, col), row, col, original.depth()));
+	            original.put(row, col, processPixel(original.get(row, col), row, col, original.depth()));
 	        }
 	    }
-		return altered;
+		return original;
 	}
 	
 	public abstract double[] processPixel(double[] in, int row, int col, int depth); // Called once for every pixel

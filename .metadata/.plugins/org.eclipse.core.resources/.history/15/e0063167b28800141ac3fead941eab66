@@ -1,0 +1,20 @@
+package org.citruscircuits.vision.detectors;
+
+import org.opencv.core.*;
+import org.opencv.imgproc.Imgproc;
+
+public class DetectedContour extends DetectedObject {
+	MatOfPoint detected;
+	
+	@Override
+	public Mat draw(Mat in) {
+		
+		return null;
+	}
+
+	@Override
+	public Rect findBoundingBox() {
+		return Imgproc.boundingRect(detected);
+	}
+
+}
